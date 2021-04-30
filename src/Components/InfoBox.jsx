@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Styles/info-box.css';
+import '../Styles/mobile.css';
 
 const exp = [{
   company: 'Facebook',

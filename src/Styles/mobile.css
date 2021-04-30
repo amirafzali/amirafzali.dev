@@ -1,0 +1,93 @@
+@media only screen and (max-width: 900px) {
+
+    .info-container {
+        height: 100vh;
+    }
+    .info-pane {
+        height: 50vh;
+        margin-bottom: 20px;
+    }
+    
+    #hey-header {
+        font-size: 25px;
+    }
+
+    .socials-container i {
+        font-size: 35px;
+        margin-right: max(1.2vw, 20px);
+    }
+
+    #resumeSocial {
+        font-size: 33px;
+        margin-top: 2px;
+    }
+
+    #left-desc {
+        padding: 0 15%;
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .profile-pic {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 125px;
+        width: 125px;
+        border-radius: 50%;
+        margin-top: 5%;
+    }
+
+    
+    .info-container {
+        flex-direction: column;
+        width: 90%;
+    }
+    .info-left {
+        border-bottom: 2px solid #222d3b;
+        border-right: none;
+        justify-content: center;
+    }
+
+    .pane-title {
+        margin-top: 0;
+    }
+    .info-right {
+        margin-top: 0px;
+        padding-top: 0;
+    }
+
+    .logo {
+        border-radius: 25%;
+        width: 80px;
+        height: 80px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .company-description {
+        flex: 1;
+        padding-top: 0;
+        margin-left: -25px;
+    }
+    
+    .comp-desc-header {
+        margin: 0;
+        margin-bottom: 1vh;
+    }
+    
+    .comp-name {
+        font-size: 18px;
+    }
+    
+    .comp-pos {
+        font-size: 13px;
+    }
+    
+    .comp-date {
+        font-size: 12px;
+    }
+    
+    #companySpacer {
+        height: 4.2vh;
+    }
+}
