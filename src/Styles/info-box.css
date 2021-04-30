@@ -1,0 +1,128 @@
+html {
+    background-color: #121820;
+}
+
+.info-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.info-container {
+    width: 55vw;
+    height: 55vh;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.info-pane {
+    flex: 1 1 0px;
+    border: 2px solid #222d3b;
+    overflow-y:auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+
+.info-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-right {
+    padding-top: 1vh;
+}
+
+#left-desc {
+    padding: 0 15%;
+    text-align: center;
+    font-weight: 400;
+}
+.profile-pic {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45%;
+    width: 45%;
+    border-radius: 50%;
+    margin-top: 5%;
+}
+
+.experiences {
+    display: flex;
+    flex-direction: column;
+}
+
+.pane-title {
+    text-align: center;
+}
+
+.vertical-timeline {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+}
+
+.vertical-line {
+    width: 3px;
+    background: #273344;
+    height: 8vh;
+}
+
+.company-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.logo-container {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.x {
+    flex: 0.1;
+}
+.logo {
+    width: 50%;
+    height: 30%;
+    border-radius: 25%;
+    width: 13vh;
+    height: 13vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.company-description {
+    flex: 1;
+    padding-top: 2vh;
+    margin-left: -1.5vw;
+}
+
+.comp-desc-header {
+    margin: 0;
+    margin-bottom: 1vh;
+}
+
+#companySpacer {
+    height: 7vh;
+}
+
+.socials-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.socials-container i {
+    font-size: 3vw;
+    margin-right: 1.2vw;
+    color:#3d71c0
+}
+
+#resumeBtn {
+    font-size: 2.7vw;
+    margin-top: 0.2vw
+}
