@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, useEffect } from 'react';
 import '../Styles/info-box.css';
 import '../Styles/mobile.css';
 
@@ -79,24 +79,30 @@ const LeftPane = () => (
   </div>
 );
 
-const RightPane = () => (
-  <div className="info-right info-pane">
-    <div className="experiences">
-      <h1 className="pane-title">Experiences</h1>
-      <div className="vertical-timeline">
-        {exp.map((e, i) => (
-          <CompanyBox
-            key={e.company}
-            pos={i}
-            last={exp.length - 1}
-            details={e}
-          />
-        ))}
+const RightPane = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
+  return (
+    <div className="info-right info-pane">
+      <div className="experiences">
+        <h1 className="pane-title">Experiences</h1>
+        <div className="vertical-timeline">
+          {exp.map((e, i) => (
+            <CompanyBox
+              key={e.company}
+              pos={i}
+              last={exp.length - 1}
+              details={e}
+            />
+          ))}
+
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 const InfoBox = () => (
   <div className="info-parent">
