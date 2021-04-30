@@ -33,10 +33,10 @@ const exp = [{
 }];
 
 const CompanyBox = (props) => {
+  const { pos, last, details } = props;
   const {
     img, company, position, date,
-  } = props.details;
-  const { pos, last } = props;
+  } = details;
   return (
     <div>
       <div className="company-container">
