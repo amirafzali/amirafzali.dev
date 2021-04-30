@@ -3,13 +3,13 @@ import '../Styles/info-box.css';
 
 const exp = [{
   company: 'Facebook',
-  position: 'Incoming Software Engineer Intern',
+  position: 'Incoming SWE Intern',
   date: 'Aug. 2021 - Nov. 2021',
   img: 'fb2.png',
 },
 {
   company: 'Akuna Capital',
-  position: 'Incoming Software Engineer Intern',
+  position: 'Incoming SWE Intern',
   date: 'June 2021 - Aug. 2021',
   img: 'akuna.png',
 },
@@ -48,9 +48,9 @@ const CompanyBox = (props) => {
           {pos === last && <div id="companySpacer" />}
         </div>
         <div className="company-description">
-          <h3 className="comp-desc-header">{company}</h3>
-          <h5 className="comp-desc-header">{position}</h5>
-          <h5 className="comp-desc-header">{date}</h5>
+          <h3 className="comp-name comp-desc-header">{company}</h3>
+          <h5 className="comp-pos comp-desc-header">{position}</h5>
+          <h5 className="comp-date comp-desc-header">{date}</h5>
         </div>
       </div>
     </div>
@@ -59,9 +59,9 @@ const CompanyBox = (props) => {
 
 const Socials = () => (
   <div className="socials-container">
-    <a href="https://linkedin.com/in/amirafzali" aria-label="Linkedin"><i className="fab fa-linkedin" /></a>
-    <a href="https://github.com/amirafzali" aria-label="Linkedin"><i className="fab fa-github-square" /></a>
-    <i id="resumeBtn" className="fas fa-book" />
+    <a href="https://linkedin.com/in/amirafzali" aria-label="Linkedin"><i id="linkedinSocial" className="fab fa-linkedin" /></a>
+    <a href="https://github.com/amirafzali" aria-label="Linkedin"><i id="githubSocial" className="fab fa-github-square" /></a>
+    <i id="resumeSocial" className="fas fa-book" />
   </div>
 );
 
@@ -70,9 +70,13 @@ const InfoBox = () => (
     <div className="info-container">
       <div className="info-left info-pane">
         <div className="profile-pic" style={{ backgroundImage: 'url(profile.jpg)' }} />
-        <h1>Hey, I&apos;m Amir! 👋</h1>
+        <h1 id="hey-header">
+          Hey, I&apos;m Amir!
+          {' '}
+          <span id="hand">👋</span>
+        </h1>
         <Socials />
-        <h3 id="left-desc">Check out my socials + resume, or look at the right to learn more about me! 😃</h3>
+        <p id="left-desc">Check out my socials + resume, or look at the right to learn more about me! 😃</p>
       </div>
       <div className="info-right info-pane">
         <div className="experiences">
