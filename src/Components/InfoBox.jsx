@@ -65,38 +65,45 @@ const Socials = () => (
   </div>
 );
 
-const InfoBox = () => (
-  <div className="info-parent">
-    <div className="info-container">
-      <div className="info-left info-pane">
-        <div className="profile-pic" style={{ backgroundImage: 'url(profile.jpg)' }} />
-        <h1 id="hey-header">
-          Hey, I&apos;m Amir!
-          {' '}
-          <span id="hand">👋</span>
-        </h1>
-        <Socials />
-        <p id="left-desc">Check out my socials + resume, or look at the right to learn more about me! 😃</p>
-      </div>
-      <div className="info-right info-pane">
-        <div className="experiences">
-          <h1 className="pane-title">Experiences</h1>
-          <div className="vertical-timeline">
-            {exp.map((e, i) => (
-              <CompanyBox
-                key={e.company}
-                pos={i}
-                last={exp.length - 1}
-                details={e}
-              />
-            ))}
+const LeftPane = () => (
+  <div className="info-left info-pane">
+    <div className="profile-pic" style={{ backgroundImage: 'url(profile.jpg)' }} />
+    <h1 id="hey-header">
+      Hey, I&apos;m Amir!
+      {' '}
+      <span id="hand">👋</span>
+    </h1>
+    <Socials />
+    <p id="left-desc">Check out my socials + resume, or look at the right to learn more about me! 😃</p>
+  </div>
+);
 
-          </div>
-        </div>
+const RightPane = () => (
+  <div className="info-right info-pane">
+    <div className="experiences">
+      <h1 className="pane-title">Experiences</h1>
+      <div className="vertical-timeline">
+        {exp.map((e, i) => (
+          <CompanyBox
+            key={e.company}
+            pos={i}
+            last={exp.length - 1}
+            details={e}
+          />
+        ))}
+
       </div>
     </div>
   </div>
+);
 
+const InfoBox = () => (
+  <div className="info-parent">
+    <div className="info-container">
+      <LeftPane />
+      <RightPane />
+    </div>
+  </div>
 );
 
 export default InfoBox;
