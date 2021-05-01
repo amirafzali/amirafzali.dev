@@ -32,10 +32,9 @@
     .profile-pic {
         background-repeat: no-repeat;
         background-size: cover;
-        height: 125px;
-        width: 125px;
+        height: max(14.8vh, 100px);
+        width: max(14.8vh, 100px);
         border-radius: 50%;
-        margin-top: 5%;
     }
 
     
@@ -58,7 +57,7 @@
     }
 
     .logo-container {
-        margin-left: -20px;
+        margin-left: -35px;
     }
 
     .logo {
@@ -71,7 +70,7 @@
     .company-description {
         flex: 1;
         padding-top: 0;
-        margin-left: -32px;
+        margin-left: -40px;
     }
     
     .comp-desc-header {

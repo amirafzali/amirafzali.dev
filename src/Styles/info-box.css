@@ -10,7 +10,7 @@ html {
 }
 .info-container {
     width: max(55vw, 900px);
-    height: 55vh;
+    height: max(470px, 55vh);
     display: flex;
     flex-direction: row;
     color: white;
