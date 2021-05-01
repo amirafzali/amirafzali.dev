@@ -57,6 +57,10 @@
         padding-top: 0;
     }
 
+    .logo-container {
+        margin-left: -20px;
+    }
+
     .logo {
         border-radius: 25%;
         width: 80px;
@@ -67,7 +71,7 @@
     .company-description {
         flex: 1;
         padding-top: 0;
-        margin-left: -25px;
+        margin-left: -32px;
     }
     
     .comp-desc-header {
@@ -90,4 +94,5 @@
     #companySpacer {
         height: 4.2vh;
     }
+
 }
