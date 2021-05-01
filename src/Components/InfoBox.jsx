@@ -33,7 +33,7 @@ const exp = [{
   img: 'alstom2.jpg',
 }];
 
-const CompanyBox = (props) => {
+const Experience = (props) => {
   const { pos, last, details } = props;
   const {
     img, company, position, date,
@@ -75,7 +75,13 @@ const LeftPane = () => (
       <span id="hand">👋</span>
     </h1>
     <Socials />
-    <p id="left-desc">Check out my socials + resume, or look at the right to learn more about me! 😃</p>
+    <p id="left-desc">
+      Check out my socials + resume, or look
+      {' '}
+      {window.innerWidth > 900 ? 'to the right' : 'below'}
+      {' '}
+      to learn more about me! 😃
+    </p>
   </div>
 );
 
@@ -90,7 +96,7 @@ const RightPane = () => {
         <h1 className="pane-title">Experiences</h1>
         <div className="vertical-timeline">
           {exp.map((e, i) => (
-            <CompanyBox
+            <Experience
               key={e.company}
               pos={i}
               last={exp.length - 1}
