@@ -80,8 +80,8 @@ display: inline-block;
 .profile-pic {
     background-repeat: no-repeat;
     background-size: cover;
-    height: max(12.2vmax, 200px);
-    width: max(12.2vmax, 200px);
+    height: max(23.1vh, 200px);
+    width: max(23.1vh, 200px);
     border-radius: 50%;
     margin-top: 5%;
 }
