@@ -9,24 +9,24 @@
     }
     
     #hey-header {
-        font-size: 25px;
+        font-size: max(3.03vh, 18px);
     }
 
     .socials-container i {
-        font-size: 35px;
-        margin-right: max(1.2vw, 20px);
+        font-size: max(4.25vh, 27.5px);
+        margin-right: max(1.2vw, 18px);
     }
 
     #resumeSocial {
-        font-size: 33px;
-        margin-top: 2px;
+        font-size: max(4.05vh,25.5px);
+        margin-top: 0.245vh;
     }
 
     #left-desc {
         padding: 0 15%;
         text-align: center;
         font-weight: 400;
-        font-size: 16px;
+        font-size: max(1.94vh, 12.5px);
     }
 
     .profile-pic {
@@ -50,7 +50,9 @@
 
     .pane-title {
         margin-top: 0;
+        font-size: 3.62vh;
     }
+
     .info-right {
         margin-top: 0px;
         padding-top: 0;
@@ -62,8 +64,8 @@
 
     .logo {
         border-radius: 25%;
-        width: 80px;
-        height: 80px;
+        width: max(9.7vh, 67px);
+        height: max(9.7vh, 67px);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -79,15 +81,15 @@
     }
     
     .comp-name {
-        font-size: 18px;
+        font-size: max(2.18vh, 14.5px);
     }
     
     .comp-pos {
-        font-size: 13px;
+        font-size: max(1.575vh, 11px);
     }
     
     .comp-date {
-        font-size: 12px;
+        font-size: max(1.455vh, 10.5px);
     }
     
     #companySpacer {
