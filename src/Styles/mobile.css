@@ -32,8 +32,8 @@
     .profile-pic {
         background-repeat: no-repeat;
         background-size: cover;
-        height: max(14.8vh, 100px);
-        width: max(14.8vh, 100px);
+        height: max(15vh, 100px);
+        width: max(15vh, 100px);
         border-radius: 50%;
     }
 
