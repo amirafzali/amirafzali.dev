@@ -62,7 +62,7 @@ const Socials = () => (
   <div className="socials-container">
     <a href="https://linkedin.com/in/amirafzali" aria-label="Linkedin"><i id="linkedinSocial" className="fab fa-linkedin" /></a>
     <a href="https://github.com/amirafzali" aria-label="Linkedin"><i id="githubSocial" className="fab fa-github-square" /></a>
-    <a href="/AmirAfzaliResume.pdf"><i id="resumeSocial" className="fas fa-book" /></a>
+    <a href="/AmirAfzaliResume.pdf" aria-label="Resume"><i id="resumeSocial" className="fas fa-book" /></a>
   </div>
 );
 
